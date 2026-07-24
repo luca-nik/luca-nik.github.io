@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const cases = (await getCollection('casestudies')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="Case Studies — Luca Nicoli" description="Selected case studies in cryptoeconomics, mechanism design, MEV, and research engineering.">
+  <h1>Case Studies</h1>
+  <p class="muted">Selected work in cryptoeconomics, mechanism design, MEV, and research engineering. Also available as a <a href="/Case-Studies.pdf">PDF portfolio</a>.</p>
+
+  {cases.map((c) => (
+    <a class="card" href={`/case-studies/${c.id}`}>
+      <div class="card-title">{c.data.title}</div>
+      <div class="card-meta">{c.data.org} · {c.data.tags}{c.data.period && ` · ${c.data.period}`}</div>
+      <p class="card-summary">{c.data.summary}</p>
+    </a>
+  ))}
+</Base>

@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const cases = (await getCollection('casestudies')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="Luca Nicoli — Cryptoeconomist & Research Scientist">
+  <div class="hero">
+    <img src="/images/me.jpg" alt="Luca Nicoli" />
+    <div>
+      <h1>Luca Nicoli, PhD</h1>
+      <p class="muted" style="margin-top:0;">Cryptoeconomist · Research Scientist · Engineer</p>
+      <div class="chips">
+        <a class="chip" href="mailto:luca.nicoli.engineer@gmail.com">Email</a>
+        <a class="chip" href="https://github.com/luca-nik">GitHub</a>
+        <a class="chip" href="https://scholar.google.com/citations?hl=en&user=SsTwaqEAAAAJ">Google Scholar</a>
+        <a class="chip" href="https://www.linkedin.com/in/luca-nicoli">LinkedIn</a>
+        <a class="chip" href="/Luca-Nicoli-CV.pdf">CV</a>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Research scientist trained in Engineering Physics, with a focus on semiconductor
+    nanotechnologies. After earning a PhD <em>cum laude</em> from Scuola Normale Superiore in
+    Theoretical &amp; Computational Chemistry, he shifted to crypto working on MEV solver agents,
+    optimal routing, and cryptoeconomic mechanism design. He is also co-founder and administrator
+    of Traent Hub, Pisa's technology and innovation hub.
+  </p>
+
+  <h2>Selected case studies</h2>
+  {cases.map((c) => (
+    <a class="card" href={`/case-studies/${c.id}`}>
+      <div class="card-title">{c.data.title}</div>
+      <div class="card-meta">{c.data.org} · {c.data.tags}</div>
+      <p class="card-summary">{c.data.summary}</p>
+    </a>
+  ))}
+
+  <h2>Elsewhere</h2>
+  <ul>
+    <li><a href="/publications">Scientific publications</a> — 10 journal articles and 1 international patent in computational chemistry and nanoplasmonics.</li>
+    <li><a href="/blog">Blog</a> — notes on Web3, cryptoeconomics, and science.</li>
+    <li><a href="/Case-Studies.pdf">Case studies portfolio (PDF)</a></li>
+  </ul>
+</Base>

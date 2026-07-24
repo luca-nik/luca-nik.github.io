@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const pubs = (await getCollection('publications')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(pubs.map(async (p) => ({ entry: p, ...(await render(p)) })));
+
+const byYear = new Map<string, typeof rendered>();
+for (const r of rendered) {
+  const key = r.entry.data.kind === 'article' ? String(r.entry.data.year) : 'Patents & Theses';
+  if (!byYear.has(key)) byYear.set(key, []);
+  byYear.get(key)!.push(r);
+}
+---
+
+<Base title="Publications — Luca Nicoli" description="Scientific publications of Luca Nicoli: journal articles and patents in computational chemistry and nanoplasmonics.">
+  <h1>Scientific Publications</h1>
+  <p class="muted">
+    Peer-reviewed work from my time in computational chemistry and nanoplasmonics, plus patents.
+    Full list on <a href="https://scholar.google.com/citations?hl=en&user=SsTwaqEAAAAJ">Google Scholar</a>.
+  </p>
+
+  {[...byYear.entries()].map(([year, items]) => (
+    <section>
+      <p class="pub-year">{year}</p>
+      {items.map(({ entry, Content }) => (
+        <article>
+          <h3 style="margin-bottom:0.2rem;">
+            <a href={entry.data.link}>{entry.data.title}</a>
+          </h3>
+          <p class="entry-meta">
+            {entry.data.authors} — <em>{entry.data.venue}</em>
+            {entry.data.kind === 'patent' && <span class="tag">Patent</span>}
+            {entry.data.kind === 'thesis' && <span class="tag">Thesis</span>}
+          </p>
+          <Content />
+          <hr />
+        </article>
+      ))}
+    </section>
+  ))}
+</Base>
