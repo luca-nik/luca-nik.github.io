@@ -89,6 +89,17 @@ blockquote {
   color: var(--muted);
 }
 
+blockquote.poem {
+  border-left: none;
+  text-align: center;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 3rem 0 1rem;
+}
+
 ::selection { background: var(--accent-soft); }
 
 .katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.3rem 0; }
