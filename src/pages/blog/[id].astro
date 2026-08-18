@@ -10,12 +10,13 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const sectionLabels = { web3: 'Web3 & Cryptoeconomics', science: 'Science', thoughts: 'Thoughts' } as const;
 ---
 
 <Base title={`${entry.data.title} — Luca Nicoli`} description={entry.data.excerpt}>
   <p class="small"><a href="/blog">← Blog</a></p>
   <h1>{entry.data.title}</h1>
-  <p class="entry-meta">{fmt(entry.data.date)} · {entry.data.section === 'web3' ? 'Web3 & Cryptoeconomics' : 'Science'}</p>
+  <p class="entry-meta">{fmt(entry.data.date)} · {sectionLabels[entry.data.section]}</p>
   <hr />
   <Content />
 </Base>

@@ -32,7 +32,7 @@ const blog = defineCollection({
     title: z.string(),
     excerpt: z.string(),
     date: z.coerce.date(),
-    section: z.enum(['web3', 'science']),
+    section: z.enum(['web3', 'science', 'thoughts']),
     coverImage: z.string().optional(),
   }),
 });

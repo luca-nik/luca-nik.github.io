@@ -6,6 +6,7 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.getTime()
 const sections = [
   { id: 'web3', label: 'Web3 & Cryptoeconomics' },
   { id: 'science', label: 'Science' },
+  { id: 'thoughts', label: 'Thoughts' },
 ] as const;
 
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
