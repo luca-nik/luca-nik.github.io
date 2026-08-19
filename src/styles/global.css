@@ -70,6 +70,16 @@ li { margin: 0.25rem 0; }
 
 img, video { max-width: 100%; height: auto; }
 
+/* Blog post figures (image + caption), centered */
+figure { margin: 1.5rem 0; text-align: center; }
+figure img { display: block; margin: 0 auto; }
+figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
 pre {
   background: var(--code-bg);
   border: 1px solid var(--border);
@@ -184,6 +194,25 @@ a.card:hover {
 .card .card-title { font-weight: 650; font-size: 1.05rem; }
 .card .card-meta { color: var(--muted); font-size: 0.84rem; margin-top: 0.2rem; }
 .card .card-summary { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0; }
+.card .card-cover {
+  float: right;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin: 0 0 0.5rem 1rem;
+}
+.card::after { content: ""; display: block; clear: both; }
+
+/* Case study cover (detail page) */
+.case-cover {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
 
 /* Lists of entries */
 .entry-list { list-style: none; padding: 0; margin: 0; }

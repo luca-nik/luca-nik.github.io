@@ -16,5 +16,6 @@ const { Content } = await render(entry);
   <h1>{entry.data.title}</h1>
   <p class="entry-meta">{entry.data.org} · {entry.data.tags} · {entry.data.period}</p>
   <hr />
+  {entry.data.cover && <img class="case-cover" src={entry.data.cover} alt={entry.data.title} />}
   <Content />
 </Base>

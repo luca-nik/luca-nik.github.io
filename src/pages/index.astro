@@ -2,10 +2,12 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 
-const cases = (await getCollection('casestudies')).sort((a, b) => a.data.order - b.data.order);
+const cases = (await getCollection('casestudies'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 2);
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3);
+  .slice(0, 2);
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
@@ -36,11 +38,13 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month:
   <h2>Selected case studies</h2>
   {cases.map((c) => (
     <a class="card" href={`/case-studies/${c.id}`}>
+      {c.data.cover && <img class="card-cover" src={c.data.cover} alt="" />}
       <div class="card-title">{c.data.title}</div>
       <div class="card-meta">{c.data.org} · {c.data.tags}</div>
       <p class="card-summary">{c.data.summary}</p>
     </a>
   ))}
+  <p class="small"><a href="/case-studies">All case studies →</a></p>
 
   <h2>Latest posts</h2>
   <ul class="entry-list">

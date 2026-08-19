@@ -11,17 +11,19 @@ via GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`.
 
 ## Structure
 
-- `src/pages/` — home (`index.astro`: intro, case studies, latest 3 blog posts),
+- `src/pages/` — home (`index.astro`: intro, 2 case studies, 2 latest blog posts),
   `/case-studies` (index + `[id]`), `/publications` (single page, grouped by year),
   `/blog` (index grouped by section + `[id]`), `/rss.xml.ts`
 - `src/layouts/Base.astro` — header/nav/footer, OG meta, favicon; default description:
   "Cryptoeconomist, Research Scientist, Engineer"
 - `src/styles/global.css` — all styling, hand-written CSS variables, dark mode via
   `prefers-color-scheme`. No UI framework. Serif headings (Palatino/Georgia stack),
-  sans body. Classes: `.hero`, `.chips`/`.chip`, `.card`, `.entry-list`, `.tag`,
-  `.pub-year`, `blockquote.poem`.
+  sans body. Classes: `.hero`, `.chips`/`.chip`, `.card` (+ `.card-cover`),
+  `.entry-list`, `.tag`, `.pub-year`, `blockquote.poem`, `figure`/`figcaption`
+  (centered image + caption in posts), `.case-cover`.
 - `src/content.config.ts` — three collections (glob loaders):
-  - `casestudies` — frontmatter: title, org, tags, period, order, summary
+  - `casestudies` — frontmatter: title, org, tags, period, order, summary, cover?
+    (optional image: thumbnail in cards, centered on detail page)
   - `publications` — title, authors, venue, year, link (verified DOIs only — never
     invent URLs), kind (article|patent|thesis), order (year desc, patent/thesis last).
     Markdown body = 3-4 line plain-language synthesis.

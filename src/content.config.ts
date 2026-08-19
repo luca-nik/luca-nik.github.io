@@ -10,6 +10,7 @@ const casestudies = defineCollection({
     period: z.string(),
     order: z.number(),
     summary: z.string(),
+    cover: z.string().optional(),
   }),
 });
 
