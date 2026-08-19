@@ -33,7 +33,7 @@ const blog = defineCollection({
     title: z.string(),
     excerpt: z.string(),
     date: z.coerce.date(),
-    section: z.enum(['web3', 'science', 'thoughts']),
+    tags: z.array(z.string()),
     coverImage: z.string().optional(),
   }),
 });

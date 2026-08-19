@@ -2,7 +2,7 @@
 title: "Our Patented Technology for the Computational Design of Plasmonic Nano-Sensors"
 excerpt: "Combining quantum mechanics and classical electrodynamics to revolutionize the design of ultra-sensitive molecular sensors."
 date: 2025-01-08
-section: "science"
+tags: [science, plasmonics]
 coverImage: "/images/posts/patent/plasmonic-sensor-design.jpeg"
 ---
 

@@ -2,7 +2,7 @@
 title: "Intent Matching: A Linear Algebra Approach to Swap Order Execution"
 excerpt: "Come get a look to my geometrical interpretation of the intent matching problem in DeFi"
 date: 2024-11-14
-section: "web3"
+tags: [web3, mev]
 coverImage: "/images/posts/intent_matching/cover.jpeg"
 ---
 

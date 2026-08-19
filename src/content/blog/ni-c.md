@@ -2,7 +2,7 @@
 title: "Electron-Assisted Growth of Carbon Nanotubes: In-silico Exploration of Catalytic Nanotechnologies"
 excerpt: "My work as Research Assistant at the University of Ulm back in 2020"
 date: 2024-10-13
-section: "science"
+tags: [science]
 coverImage: "/images/posts/ni-c/ni-c.jpg"
 ---
 

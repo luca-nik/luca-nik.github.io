@@ -2,7 +2,7 @@
 title: "MEV Agents and the Forward Routing Problems"
 excerpt: "My DeFi automatic bot that maximizes the order's surplus by matching a set of order intents to various potential liquidity sources."
 date: 2024-10-05
-section: "web3"
+tags: [web3, mev]
 coverImage: "/images/posts/forward-routing/mev_agent.png"
 ---
 

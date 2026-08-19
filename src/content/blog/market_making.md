@@ -2,7 +2,7 @@
 title: "Designing a Market-Making Algorithm for IOTA/BTC: A Predictive and Risk-Aware Approach"
 excerpt: "Explore how I designed a market-making algorithm for the IOTA/BTC pair on Binance."
 date: 2025-02-06
-section: "web3"
+tags: [web3, market-making]
 coverImage: "/images/posts/market_making/cover.jpeg"
 ---
 # Introduction

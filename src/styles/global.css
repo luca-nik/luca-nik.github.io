@@ -232,6 +232,7 @@ a.card:hover {
   padding: 0.05rem 0.55rem;
   margin-right: 0.3rem;
 }
+.entry-meta .tag { margin-left: 0.35rem; margin-right: 0; }
 
 /* Publication year headings */
 .pub-year {

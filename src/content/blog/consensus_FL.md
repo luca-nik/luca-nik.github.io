@@ -2,7 +2,7 @@
 title: "Federated Learning & Consensus Approaches for IoT Networks"
 excerpt: "When consensus algorithms allow for the cooperation and collective learning of IoT devices."
 date: 2024-10-10
-section: "web3"
+tags: [web3, federated-learning]
 coverImage: "/images/posts/ConsensusFL/cover.jpeg"
 ---
 

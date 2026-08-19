@@ -3,11 +3,6 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 
 const posts = (await getCollection('blog')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-const sections = [
-  { id: 'web3', label: 'Web3 & Cryptoeconomics' },
-  { id: 'science', label: 'Science' },
-  { id: 'thoughts', label: 'Thoughts' },
-] as const;
 
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
@@ -15,18 +10,16 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month:
 <Base title="Blog — Luca Nicoli" description="Notes on Web3, cryptoeconomics, and science.">
   <h1>Blog</h1>
 
-  {sections.map((s) => (
-    <>
-      <h2>{s.label}</h2>
-      <ul class="entry-list">
-        {posts.filter((p) => p.data.section === s.id).map((p) => (
-          <li>
-            <a class="entry-title" href={`/blog/${p.id}`}>{p.data.title}</a>
-            <div class="entry-meta">{fmt(p.data.date)}</div>
-            <p class="small muted">{p.data.excerpt}</p>
-          </li>
-        ))}
-      </ul>
-    </>
-  ))}
+  <ul class="entry-list">
+    {posts.map((p) => (
+      <li>
+        <a class="entry-title" href={`/blog/${p.id}`}>{p.data.title}</a>
+        <div class="entry-meta">
+          {fmt(p.data.date)}
+          {p.data.tags.map((t) => <span class="tag">{t}</span>)}
+        </div>
+        <p class="small muted">{p.data.excerpt}</p>
+      </li>
+    ))}
+  </ul>
 </Base>

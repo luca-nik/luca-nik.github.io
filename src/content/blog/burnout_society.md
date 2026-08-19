@@ -2,7 +2,7 @@
 title: "\"The Burnout Society\" aka the society of self-exploitation"
 excerpt: "Byung-Chul Han writes about our current western society"
 date: 2024-10-04
-section: "thoughts"
+tags: [thoughts, books]
 coverImage: "/images/posts/burnout_society/Burnout.jpeg"
 ---
 

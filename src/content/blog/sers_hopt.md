@@ -2,7 +2,7 @@
 title: "Surface enhanced Raman Scattering (SERS): a high-order perturbation theory treatment"
 excerpt: "The theoretical treatment of SERS within TDPT and my perspective on charge transfer mechanisms."
 date: 2024-10-07
-section: "science"
+tags: [science, plasmonics]
 coverImage: "/images/posts/sers_hopt/SERS.jpeg"
 ---
 

@@ -2,7 +2,7 @@
 title: "Losing the path."
 excerpt: "Something I lost and now I found again."
 date: 2024-10-03
-section: "thoughts"
+tags: [thoughts, climbing]
 ---
 
 In the past few months, I've been going through a lot.  

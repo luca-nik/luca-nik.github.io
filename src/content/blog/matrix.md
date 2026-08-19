@@ -2,7 +2,7 @@
 title: "Chaos theory and the Architect from Matrix"
 excerpt: "Why no perfect simulation can exist, and how The Matrix's Architect embodies the illusion of total control in the face of chaos."
 date: 2025-04-14
-section: "thoughts"
+tags: [thoughts]
 coverImage: "/images/posts/matrix/cover.png"
 ---
 

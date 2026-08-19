@@ -13,7 +13,7 @@ via GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`.
 
 - `src/pages/` — home (`index.astro`: intro, 2 case studies, 2 latest blog posts),
   `/case-studies` (index + `[id]`), `/publications` (single page, grouped by year),
-  `/blog` (index grouped by section + `[id]`), `/rss.xml.ts`
+  `/blog` (single chronological list + `[id]`), `/rss.xml.ts`
 - `src/layouts/Base.astro` — header/nav/footer, OG meta, favicon; default description:
   "Cryptoeconomist, Research Scientist, Engineer"
 - `src/styles/global.css` — all styling, hand-written CSS variables, dark mode via
@@ -27,9 +27,9 @@ via GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`.
   - `publications` — title, authors, venue, year, link (verified DOIs only — never
     invent URLs), kind (article|patent|thesis), order (year desc, patent/thesis last).
     Markdown body = 3-4 line plain-language synthesis.
-  - `blog` — title, excerpt, date (ISO), section (web3|science|thoughts), coverImage?
-    (coverImage is metadata only, not rendered by `[id].astro`). Section labels are
-    mapped in `src/pages/blog/index.astro` and `src/pages/blog/[id].astro`.
+  - `blog` — title, excerpt, date (ISO), tags (array of strings, e.g. [web3, mev]),
+    coverImage? (used as `og:image` for social previews; not rendered in the page).
+    Posts are listed in a single chronological list on `/blog`.
 - `public/` — CV + Case-Studies PDFs, `images/` (profile photo `me.jpg` = GitHub
   avatar headshot, `images/posts/*` migrated blog assets), `documents/` (PDFs embedded
   in old blog posts), `favicon.svg`

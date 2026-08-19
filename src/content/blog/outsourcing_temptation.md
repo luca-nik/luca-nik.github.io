@@ -2,7 +2,7 @@
 title: "Outsourcing the Temptation"
 excerpt: "How I vibe-coded a language-learning app so I could stop building it and start using it"
 date: 2026-08-18
-section: "thoughts"
+tags: [thoughts, vibe-coding]
 coverImage: "/images/posts/outsourcing-temptation/image8.png"
 ---
 

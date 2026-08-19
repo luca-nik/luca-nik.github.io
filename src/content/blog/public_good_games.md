@@ -2,7 +2,7 @@
 title: "Public Good Games: The Science of Collective Action in Web3"
 excerpt: "A deep dive into the design principles and incentive mechanisms that make large-scale cooperation possible in decentralized systems."
 date: 2025-08-06
-section: "web3"
+tags: [web3, game-theory]
 ---
 
 Public Good Games (PGGs) represent one of the most fundamental challenges in both traditional economics and the emerging Web3 ecosystem. At their core, these games model the tension between individual self-interest and collective welfare—a dynamic that plays out daily in decentralized protocols, DAOs, and blockchain governance systems.
