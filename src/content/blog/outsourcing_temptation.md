@@ -3,7 +3,7 @@ title: "Outsourcing the Temptation"
 excerpt: "How I vibe-coded a language-learning app so I could stop building it and start using it"
 date: 2026-08-18
 tags: [thoughts, vibe-coding]
-coverImage: "/images/posts/outsourcing-temptation/image8.png"
+coverImage: "/images/posts/outsourcing-temptation/image6.jpg"
 ---
 
 *How I vibe-coded a language-learning app so I could stop building it and start using it*
@@ -15,7 +15,10 @@ I tried to be honest with myself. Considering the free time I had, I was never g
 
 So I went to a shop, bought a high-school Spanish textbook, and started studying a little every day. I am not known for my strict discipline. I have always felt that discipline kills my creative side. Still, the Spanish break after my morning coffee soon became a pleasant routine, and I managed to stick to it for several months.
 
-<img src="/images/posts/outsourcing-temptation/image1.jpg" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image1.jpg" alt="My high-school Spanish textbook." />
+  <figcaption>My high-school Spanish textbook.</figcaption>
+</figure>
 
 Soon, however, I ran into an issue that was slowing me down: vocabulary! 
 
@@ -31,7 +34,10 @@ Second, being disorganized, I often lost the notebook or forgot it at home. New 
 
 Fed up with the slow progress, I decided to try something else. Instead of changing myself, which I live well with and I was neither willing nor interested in doing just to learn a few Spanish words, I changed the system of learning to fit my strengths and weaknesses: I built my own language-learning app.
 
-<img src="/images/posts/outsourcing-temptation/image2.png" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image2.png" alt="The first version: a cron-triggered quiz in my terminal." />
+  <figcaption>The first version: a cron-triggered quiz in my terminal.</figcaption>
+</figure>
 
 Back then, I was still doing my PhD in Theoretical Chemistry. The app was a very simple Python program triggered by a cron job on my computer and running in my terminal. Yes, on the terminal... such a great UX, right?!  Then again, we were writing algorithms for complex matrix multiplications in Fortran 90 using `vi`. Tbh, we had been anesthetized to garbage UX.
 
@@ -41,7 +47,10 @@ The game was a digital version of my notebook. It picked a few words from a data
 
 There was no formal check. What would be the point of lying to myself?
 
-<img src="/images/posts/outsourcing-temptation/image3.png" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image3.png" alt="Every hour, a few words. Recall, press Enter, self-grade." />
+  <figcaption>Every hour, a few words. Recall, press Enter, self-grade.</figcaption>
+</figure>
 
 Behind the game was a primitive scheduling algorithm. Each word had a score that decreased over time. The app selected the words with the lowest scores. A correct answer increased a word’s score, pushing it further into the future. A wrong answer left it where it was.
 
@@ -49,7 +58,10 @@ It sounds silly, but I kept playing. The interruptions were annoying without bei
 
 With use, however, the app started to feel too simple and clunky. No wonder, right?
 
-<img src="/images/posts/outsourcing-temptation/image4.png" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image4.png" alt="The whole interface. Peak UX, PhD days." />
+  <figcaption>The whole interface. Peak UX, PhD days.</figcaption>
+</figure>
 
 Worse, being geeky, my interest slowly shifted away from learning Spanish and toward improving the app. I wanted to refine the interface, adjust the scheduler, and find smarter ways of selecting useful words. Building the tool was starting to consume the time I was supposed to spend using it.
 
@@ -57,7 +69,10 @@ I knew where this was going, so I removed the temptation and downloaded Anki.
 
 Anki is the reference open-source flashcard app. It has a battle-tested spaced-repetition engine, decks for almost everything, and a user interface that looks like it was designed to file your taxes.
 
-<img src="/images/posts/outsourcing-temptation/image5.png" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image5.jpeg" alt="Anki: a UI designed to file your taxes, but it works." />
+  <figcaption>Anki: a UI designed to file your taxes, but it works.</figcaption>
+</figure>
 
 Ugly, but it works.
 
@@ -68,7 +83,10 @@ More importantly, I had fun.
 ## Chapter 2: Outsourcing the Temptation
 This year, I went back to EthCC, the Ethereum conference in Cannes. Afterwards, I visited Marseille and fell in love with the area. Deep-blue sea, rock-climbing opportunities everywhere, and a lively city. That was enough to make me want to learn French.
 
-<img src="/images/posts/outsourcing-temptation/image6.jpg" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image6.jpg" alt="The Calanques near Marseille — the reason for all this." />
+  <figcaption>The Calanques near Marseille — the reason for all this.</figcaption>
+</figure>
 
 Italian native speakers know that French is a different beast from Spanish. The pronunciation, irregular verbs, exceptions, and exceptions to the exceptions make it considerably more difficult.
 
@@ -95,7 +113,10 @@ I was also aware of the trap I had fallen into the first time. So, sitting on a 
 3. The app had to be easy to upgrade, especially its memory algorithm, without requiring changes to the rest of the system.  
 4. It had to have a modern UX and be mobile-first.
 
-<img src="/images/posts/outsourcing-temptation/image7.jpg" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image7.jpg" alt="The bench under the beech tree where the four guardrails were written." />
+  <figcaption>The bench under the beech tree where the four guardrails were written.</figcaption>
+</figure>
 
 For all these reasons, I made a very difficult decision for me: I would fully vibe-code the app.
 
@@ -107,7 +128,10 @@ This was the first time I had fully vibe-coded an app, and giving the agent free
 
 The result is iBaloss, a small Progressive Web App (PWA) that lives on my phone’s home screen and does exactly what my notebook never could.
 
-<img src="/images/posts/outsourcing-temptation/image8.png" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image8.jpeg" alt="iBaloss on my phone's home screen." />
+  <figcaption>iBaloss on my phone's home screen.</figcaption>
+</figure>
 
 I add the words from the chapter I am studying, with Italian on one side and French on the other. I can also add verbs, together with their conjugation tables, tense by tense, as I learn them.
 
@@ -121,7 +145,10 @@ I type the answer, accents included, and the app checks it exactly.
 
 Behind the scenes is a simplified SM-2 scheduler, from the same family of spaced-repetition algorithms popularized by Anki. Cards I fail return almost immediately. Cards I know return after an interval that grows with each successful answer.
 
-<img src="/images/posts/outsourcing-temptation/image9.png" alt="" class=blogpost-image />
+<figure>
+  <img src="/images/posts/outsourcing-temptation/image9.jpeg" alt="A review session in iBaloss." />
+  <figcaption>A review session in iBaloss.</figcaption>
+</figure>
 
 The app works fully offline. When online, it saves a snapshot of my data to the cloud, so if I lose the phone while getting extremely angry, I can still save my French vocabulary.
 
