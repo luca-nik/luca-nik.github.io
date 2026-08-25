@@ -10,13 +10,15 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const readingTime = (body: string) =>
+  Math.max(1, Math.round(body.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(Boolean).length / 200));
 ---
 
 <Base title={`${entry.data.title} — Luca Nicoli`} description={entry.data.excerpt} image={entry.data.coverImage}>
   <p class="small"><a href="/blog">← Blog</a></p>
   <h1>{entry.data.title}</h1>
   <p class="entry-meta">
-    {fmt(entry.data.date)}
+    {fmt(entry.data.date)} · {readingTime(entry.body ?? '')} min read
     {entry.data.tags.map((t) => <span class="tag">{t}</span>)}
   </p>
   <hr />
