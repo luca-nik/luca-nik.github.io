@@ -126,11 +126,11 @@ Learning a language is also kind of a vibe. The system does not need to be extre
 
 This was the first time I had fully vibe-coded an app, and giving the agent free rein felt weird. Of course, I still discussed the plan with it beforehand. I could not lose control completely.
 
-The result is iBaloss, a small Progressive Web App (PWA) that lives on my phone’s home screen and does exactly what my notebook never could.
+The result is Tel7 (from *te'l seet?*, "you know?" in the dialect of my hometown, Como), a small Progressive Web App (PWA) that lives on my phone’s home screen and does exactly what my notebook never could.
 
 <figure>
-  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image8.jpeg" alt="iBaloss on my phone's home screen." />
-  <figcaption>iBaloss on my phone's home screen.</figcaption>
+  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image8.jpeg" alt="Tel7 on my phone's home screen." />
+  <figcaption>Tel7 on my phone's home screen.</figcaption>
 </figure>
 
 I add the words from the chapter I am studying, with Italian on one side and French on the other. I can also add verbs, together with their conjugation tables, tense by tense, as I learn them.
@@ -146,8 +146,8 @@ I type the answer, accents included, and the app checks it exactly.
 Behind the scenes is a simplified SM-2 scheduler, from the same family of spaced-repetition algorithms popularized by Anki. Cards I fail return almost immediately. Cards I know return after an interval that grows with each successful answer.
 
 <figure>
-  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image9.jpeg" alt="A review session in iBaloss." />
-  <figcaption>A review session in iBaloss.</figcaption>
+  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image9.jpeg" alt="A review session in Tel7." />
+  <figcaption>A review session in Tel7.</figcaption>
 </figure>
 
 The app works fully offline. When online, it saves a snapshot of my data to the cloud, so if I lose the phone while getting extremely angry, I can still save my French vocabulary.
