@@ -70,7 +70,7 @@ I knew where this was going, so I removed the temptation and downloaded Anki.
 Anki is the reference open-source flashcard app. It has a battle-tested spaced-repetition engine, decks for almost everything, and a user interface that looks like it was designed to file your taxes.
 
 <figure>
-  <img src="/images/posts/outsourcing-temptation/image5.jpeg" alt="Anki: a UI designed to file your taxes, but it works." />
+  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image5.jpeg" alt="Anki: a UI designed to file your taxes, but it works." />
   <figcaption>Anki: a UI designed to file your taxes, but it works.</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ More importantly, I had fun.
 This year, I went back to EthCC, the Ethereum conference in Cannes. Afterwards, I visited Marseille and fell in love with the area. Deep-blue sea, rock-climbing opportunities everywhere, and a lively city. That was enough to make me want to learn French.
 
 <figure>
-  <img style="width: 60%;" src="/images/posts/outsourcing-temptation/image6.jpg" alt="The Calanques near Marseille, the reason for all this." />
+  <img style="width: 75%;" src="/images/posts/outsourcing-temptation/image6.jpg" alt="The Calanques near Marseille, the reason for all this." />
   <figcaption>The Calanques near Marseille, the reason for all this.</figcaption>
 </figure>
 
