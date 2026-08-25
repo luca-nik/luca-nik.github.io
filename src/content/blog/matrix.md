@@ -29,7 +29,7 @@ $$
 x_{n+1} = r x_n (1 - x_n)
 $$
 
-Here, even tiny differences in the initial value of $x_0$ lead to vastly different trajectories over time — a hallmark of chaotic systems. This isn't randomness, but **structured unpredictability**.
+Here, even tiny differences in the initial value of $x_0$ lead to vastly different trajectories over time, a hallmark of chaotic systems. This isn't randomness, but **structured unpredictability**.
 
 Key features:
 
@@ -41,7 +41,7 @@ Key features:
 
 ## Why Simulation Fails: Chaos + Quantum Limits
 
-Simulating a complex world like ours isn't just computationally demanding — it's **fundamentally limited**.
+Simulating a complex world like ours isn't just computationally demanding. It's **fundamentally limited**.
 
 ### Chaotic Systems
 
@@ -61,7 +61,7 @@ $$
 \Delta x \cdot \Delta p \geq \frac{\hbar}{2}
 $$
 
-This sets a **fundamental epistemological limit** — it's not a computing issue, it's baked into reality.
+This sets a **fundamental epistemological limit**: it's not a computing issue, it's baked into reality.
 
 ---
 
@@ -75,13 +75,13 @@ His attempt to build a perfect system collapses under the weight of:
 - Emergent phenomena
 - The "anomaly" of free will (a.k.a. the natural outcome of a chaotic, adaptive system)
 
-The Oracle, representing intuition and probabilistic foresight, is his opposite. Together, they form a duality of **Order vs. Chaos** — and Matrix only functions when **both are accepted**.
+The Oracle, representing intuition and probabilistic foresight, is his opposite. Together, they form a duality of **Order vs. Chaos**, and Matrix only functions when **both are accepted**.
 
 ---
 
 ## Conclusion: The Lesson of Chaos
 
-Trying to simulate — let alone control — a truly complex system is a futile endeavor. As chaos theory and quantum mechanics remind us: you can’t outcompute the universe. 
+Trying to simulate, let alone control, a truly complex system is a futile endeavor. As chaos theory and quantum mechanics remind us: you can’t outcompute the universe. 
 
 *The Matrix* dramatizes this with a digital god who miscalculates the most human variable of all: **freedom**.
 

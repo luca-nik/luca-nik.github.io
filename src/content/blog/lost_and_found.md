@@ -6,7 +6,7 @@ tags: [thoughts, climbing]
 ---
 
 In the past few months, I've been going through a lot.  
-While organizing my house—a much-needed step to sort out some of the inner chaos—I found a piece of paper where I had written down a thought some time ago.  
+While organizing my house, a much-needed step to sort out some of the inner chaos, I found a piece of paper where I had written down a thought some time ago.  
 
 <blockquote class="poem">
     Perso<br>

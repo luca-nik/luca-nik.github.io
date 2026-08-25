@@ -6,7 +6,7 @@ tags: [web3, mev]
 coverImage: "/images/posts/intent_matching/cover.jpeg"
 ---
 
-In the decentralized finance (DeFi) space, finding matching intents—such as swap orders between different tokens—is a key challenge. The concept of intent matching relates to the process of identifying closed loops in an intent-multigraph. Each user’s intent is represented as a directed edge between tokens, and finding a valid match requires satisfying certain price conditions for all participants in the loop.
+In the decentralized finance (DeFi) space, finding matching intents, such as swap orders between different tokens, is a key challenge. The concept of intent matching relates to the process of identifying closed loops in an intent-multigraph. Each user’s intent is represented as a directed edge between tokens, and finding a valid match requires satisfying certain price conditions for all participants in the loop.
 
 This blog post introduces basic ideas surrounding intent matching, particularly focusing on the execution of swap orders with a limit price. The intent-matching problem can be reduced to a system of equations, with solutions indicating whether a valid match between different users' intents can occur.
 

@@ -14,7 +14,7 @@ I pretty randomly looked into my former Telecommunication Professor's Google Sch
 
 ### Federated Learning Overview
 
-Federated Learning (FL) is emerging as a novel approach for training machine learning models in distributed systems. Instead of sharing the training dataset with a central server, model parameters—such as neural network weights and biases—are collectively optimized by a large network of interconnected devices, each functioning as a local learner. This method is particularly beneficial for power-constrained IoT devices with slow and intermittent connections. Additionally, FL maintains privacy by eliminating the need to export data to third parties.
+Federated Learning (FL) is emerging as a novel approach for training machine learning models in distributed systems. Instead of sharing the training dataset with a central server, model parameters, such as neural network weights and biases, are collectively optimized by a large network of interconnected devices, each functioning as a local learner. This method is particularly beneficial for power-constrained IoT devices with slow and intermittent connections. Additionally, FL maintains privacy by eliminating the need to export data to third parties.
 
 However, existing FL approaches face limitations due to centralized optimization, which depends on a server for aggregating and fusing local parameters. This reliance creates a single point of failure and poses scalability challenges as the network size increases.
 

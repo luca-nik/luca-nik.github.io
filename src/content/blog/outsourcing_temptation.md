@@ -84,8 +84,8 @@ More importantly, I had fun.
 This year, I went back to EthCC, the Ethereum conference in Cannes. Afterwards, I visited Marseille and fell in love with the area. Deep-blue sea, rock-climbing opportunities everywhere, and a lively city. That was enough to make me want to learn French.
 
 <figure>
-  <img src="/images/posts/outsourcing-temptation/image6.jpg" alt="The Calanques near Marseille — the reason for all this." />
-  <figcaption>The Calanques near Marseille — the reason for all this.</figcaption>
+  <img style="width: 60%;" src="/images/posts/outsourcing-temptation/image6.jpg" alt="The Calanques near Marseille, the reason for all this." />
+  <figcaption>The Calanques near Marseille, the reason for all this.</figcaption>
 </figure>
 
 Italian native speakers know that French is a different beast from Spanish. The pronunciation, irregular verbs, exceptions, and exceptions to the exceptions make it considerably more difficult.
@@ -129,7 +129,7 @@ This was the first time I had fully vibe-coded an app, and giving the agent free
 The result is iBaloss, a small Progressive Web App (PWA) that lives on my phone’s home screen and does exactly what my notebook never could.
 
 <figure>
-  <img src="/images/posts/outsourcing-temptation/image8.jpeg" alt="iBaloss on my phone's home screen." />
+  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image8.jpeg" alt="iBaloss on my phone's home screen." />
   <figcaption>iBaloss on my phone's home screen.</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ I type the answer, accents included, and the app checks it exactly.
 Behind the scenes is a simplified SM-2 scheduler, from the same family of spaced-repetition algorithms popularized by Anki. Cards I fail return almost immediately. Cards I know return after an interval that grows with each successful answer.
 
 <figure>
-  <img src="/images/posts/outsourcing-temptation/image9.jpeg" alt="A review session in iBaloss." />
+  <img style="width: 40%;" src="/images/posts/outsourcing-temptation/image9.jpeg" alt="A review session in iBaloss." />
   <figcaption>A review session in iBaloss.</figcaption>
 </figure>
 
