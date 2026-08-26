@@ -4,6 +4,7 @@
   --accent: #1d4ed8;
   --accent-soft: rgba(29, 78, 216, 0.08);
   --border: #e5e5e8;
+  --grid-line: #f0f0f2;
   --bg: #fdfdfc;
   --card-bg: #ffffff;
   --code-bg: #f4f4f6;
@@ -16,6 +17,7 @@
     --accent: #8ab4ff;
     --accent-soft: rgba(138, 180, 255, 0.12);
     --border: #2c2c31;
+    --grid-line: #1b1b1f;
     --bg: #131315;
     --card-bg: #1a1a1e;
     --code-bg: #1e1e22;
@@ -30,9 +32,10 @@ body {
   margin: 0;
   background-color: var(--bg);
   background-image:
-    linear-gradient(to right, var(--border) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
-  background-size: 72px 72px;
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 36px 36px;
+  background-position: center 0;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.65;
