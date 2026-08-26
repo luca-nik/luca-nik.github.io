@@ -18,7 +18,8 @@ via GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`.
   "Cryptoeconomist, Research Scientist, Engineer"
 - `src/styles/global.css` — all styling, hand-written CSS variables, dark mode via
   `prefers-color-scheme`. No UI framework. Serif headings (Palatino/Georgia stack),
-  sans body. Classes: `.hero`, `.chips`/`.chip`, `.card` (+ `.card-cover`),
+  sans body. Page background: subtle 72px grid (1px lines in `--border` on `--bg`,
+  adapts to dark mode). Classes: `.hero`, `.chips`/`.chip`, `.card` (+ `.card-cover`),
   `.entry-list`, `.tag`, `.pub-year`, `blockquote.poem`, `figure`/`figcaption`
   (centered image + caption in posts), `.case-cover`.
 - `src/content.config.ts` — three collections (glob loaders):
