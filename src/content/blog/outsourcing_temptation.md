@@ -9,15 +9,18 @@ coverImage: "/images/posts/outsourcing-temptation/image6.jpg"
 *How I vibe-coded a language-learning app so I could stop building it and start using it*
 
 ## Chapter 1: When the Tool Became the Distraction
-Three years ago, around this time of year, I decided to learn Spanish.
+Three years ago, around this time of year, I quite randomly decided to learn Spanish.
 
-I tried to be honest with myself. Considering the free time I had, I was never going to become flawless, nor did I want to. My goal was simply to become proficient enough to hold reasonably fluent conversations with native speakers.
+Considering the free time I had, I was never going to become flawless, nor did I want to. I tried to be honest with myself and set a reachable goal: simply become sufficiently proficient to hold reasonably fluent conversations when in Spain.
+So I went to a bookshop, bought a high-school Spanish textbook, and started studying a little every day.
 
-So I went to a shop, bought a high-school Spanish textbook, and started studying a little every day. I am not known for my strict discipline. I have always felt that discipline kills my creative side. Still, the Spanish break after my morning coffee soon became a pleasant routine, and I managed to stick to it for several months.
+Now, I am not known for my strict discipline: I have always felt that rigorous discipline kills my creative side. 
+
+Still, the Spanish break after my morning coffee quickly, and gladly, became a pleasant routine.
 
 <figure>
-  <img src="/images/posts/outsourcing-temptation/image1.jpg" alt="My high-school Spanish textbook." />
-  <figcaption>My high-school Spanish textbook.</figcaption>
+  <img src="/images/posts/outsourcing-temptation/image1.jpg" alt="The high-school level Spanish textbook I bought." />
+  <figcaption>The high-school level Spanish textbook I bought.</figcaption>
 </figure>
 
 Soon, however, I ran into an issue that was slowing me down: vocabulary! 
