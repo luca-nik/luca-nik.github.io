@@ -5,6 +5,7 @@ tags: "MEV Research · Convex Optimization · Optimal Routing"
 period: ""
 order: 6
 summary: "A research codebase that models the market as a token-venue graph and solves forward routing as a convex optimization, provably finding the surplus-maximizing execution."
+cover: "/images/case-studies/06-mev-agent.png"
 ---
 
 ## The problem

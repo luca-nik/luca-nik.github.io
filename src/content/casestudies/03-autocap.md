@@ -5,6 +5,7 @@ tags: "Mechanism Design & Production Deployment · Filecoin Plus"
 period: "2026"
 order: 3
 summary: "An action-first Filecoin Plus DataCap allocator that distributes DataCap proportionally to on-chain FIL burns, deployed to mainnet with a public verification dashboard."
+cover: "/images/case-studies/03-autocap.png"
 ---
 
 ## The client

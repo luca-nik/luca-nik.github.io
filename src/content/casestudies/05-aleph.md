@@ -5,6 +5,7 @@ tags: "MEV Mitigation & DeFi · Intent-Based Solvers · Solana"
 period: ""
 order: 5
 summary: "Urani's in-house arbitrage agent on Solana: peer-to-peer intent matching plus threaded AMM routing, released as an open-source Apache-2.0 solver template."
+cover: "/images/case-studies/05-aleph.png"
 ---
 
 ## The context

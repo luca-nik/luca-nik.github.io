@@ -5,6 +5,7 @@ tags: "Protocol & Network Economics · Fraud Games · Agent-Based Simulation"
 period: "Jan–Feb 2026"
 order: 2
 summary: "Economic design of a trustless tensor-compute network: stake and slashing conditions that make honest execution the equilibrium, validated by adversarial agent-based simulation."
+cover: "/images/case-studies/02-hellas.jpg"
 ---
 
 ## The client

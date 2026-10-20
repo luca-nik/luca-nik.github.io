@@ -5,6 +5,7 @@ tags: "Mechanism Design & Tokenomics"
 period: "Dec 2025"
 order: 1
 summary: "Formal and computational analysis of Revnets, proving four cryptoeconomic guarantees and reducing all system dynamics to seven immutable launch-time parameters."
+cover: "/images/case-studies/01-revnet.png"
 ---
 
 ## The client

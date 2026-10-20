@@ -5,6 +5,7 @@ tags: "Research Tooling · LLM + Economic Simulation"
 period: "Feb 2026"
 order: 4
 summary: "An MCP-based conversational tool that pairs DeepSeek V3 with MechaFIL, a differentiable digital twin of the Filecoin economy, to deliver plain-language forecasts with interactive charts."
+cover: "/images/case-studies/04-econolens.png"
 ---
 
 ## The problem
